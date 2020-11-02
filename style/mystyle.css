@@ -1,0 +1,128 @@
+* {box-sizing: border-box; }
+body { margin:0; }
+h1 {margin-left: 1rem}
+
+
+/* css for nav section */
+
+.main-nav .nav-button {
+    position: absolute;
+    font-size: 2rem;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.main-nav ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    list-style: none;
+    background-color:blue;
+}
+
+.main-nav ul.active {
+    display:block;
+} 
+
+.main-nav a {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align:right;
+    display: block;
+    color: #333;
+    
+}
+
+.main-nav a:hover, .main-nav a:focus {
+  background: #ccc;
+  color: black;
+}
+
+@media screen and (min-width: 800px) {
+    .main-nav .nav-button {
+        display:none;
+    }
+
+    .main-nav ul, .main-nav ul.active {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    
+    .flex div {
+        width:50%
+    }
+
+/* css end of nav section */
+
+
+/* css for main section */
+.flex { 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex img { width:100%; }
+
+p { 
+    padding-left:1rem;
+    padding-right:1rem;
+}
+/* end css for main section */
+
+
+/*css for  slideshow */
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 80%; 
+    height: 70vh; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+#slideshow > div img {
+    max-height: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+
+
+/*end css for  slideshow */
+    
+ /*css for Contact page */
+    
+  
+    form {
+        padding-left:1em:
+    }
+
+
+
+/* end of CSS for Contact page */   
+    
+
+/* Media queries go at the end */
+@media screen and (min-width: 800px) {
+    /* hide the menu button on larger screen */
+    .main-nav .nav-button {
+        display:none;
+    }    
+    
+    
+    
+    
