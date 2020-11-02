@@ -18,7 +18,7 @@ h1 {margin-left: 1rem}
     padding: 0;
     display: none;
     list-style: none;
-    background-color:blue;
+    background-color:lightgrey;
 }
 
 .main-nav ul.active {
